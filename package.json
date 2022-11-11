@@ -1,6 +1,7 @@
 {
   "name": "code-regulation",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "scripts": {
     "lint-staged": "lint-staged",
@@ -25,5 +26,8 @@
       "prettier --write",
       "eslint"
     ]
+  },
+  "dependencies": {
+    "commander": "^9.4.1"
   }
 }
