@@ -4,7 +4,15 @@ module.exports = {
         node: true
     },
     // 一些引用的规范
-    extends: ['eslint-config-airbnb-base', 'plugin:prettier/recommended'],
+    extends: [
+        'eslint-config-airbnb-base',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended'
+    ],
+    parserOptions: {
+        parser: '@typescript-eslint/parser'
+    },
+    plugins: ['@typescript-eslint'],
     // 自定义规则
     rules: {
         // 配置列出依赖的package.json
@@ -33,16 +41,23 @@ module.exports = {
                     '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
             }
         ],
-        // 引入时可以使用后缀名
-        "import/extensions": ["error", "always", {
-            ignorePackages: false
-        }]
+        'import/extensions': [
+            'error',
+            'ignorePackages',
+            {
+                js: 'never',
+                ts: 'never'
+            }
+        ]
     },
     // File ignored by default.  Use a negated ignore pattern
     ignorePatterns: ['!.*', 'dist', 'node_modules'],
     settings: {
-        "import/resolver": {
-            alias: [['#lib','./packages/base/lib'],['#utils','./packages/base/lib/utils']]
+        'import/resolver': {
+            typescript: {},
+            node: {
+                extensions: ['js', 'ts']
+            }
         }
     }
 }

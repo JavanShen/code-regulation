@@ -1,18 +1,13 @@
 {
-  "name": "base",
+  "name": "@code-regulation/base",
   "version": "1.0.0",
   "type": "module",
-  "imports": {
-    "#lib/*": "./lib/*",
-    "#utils/*": "./lib/utils/*"
-  },
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc-watch"
   },
   "bin": {
-    "rec": "./bin/rec.js"
+    "rec": "./dist/bin/rec.js"
   },
   "keywords": [],
   "author": "",
