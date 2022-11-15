@@ -1,0 +1,9 @@
+{
+  "name": "@beaglee/eslint-config-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
