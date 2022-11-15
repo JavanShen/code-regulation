@@ -48,7 +48,7 @@ importers:
   packages/eslint-typescript:
     specifiers:
       '@beaglee/eslint-config-base': workspace:^1.0.0
-    devDependencies:
+    dependencies:
       '@beaglee/eslint-config-base': link:../eslint-base
 
 packages:
