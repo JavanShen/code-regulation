@@ -8,5 +8,8 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": "^8.27.0"
   }
 }
