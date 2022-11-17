@@ -5,6 +5,7 @@
   "description": "",
   "scripts": {
     "dev:base": "pnpm run -C packages/base dev",
+    "lint": "eslint . --ext .js,.ts --no-fix ",
     "lint-staged": "lint-staged",
     "preapre": "husky install"
   },
