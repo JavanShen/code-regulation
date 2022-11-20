@@ -1,14 +1,12 @@
-import fs from 'fs'
-import path from 'path'
-import rootDir from './rootPath.js'
+import { createRequire } from 'module'
 
 interface Pkg {
     [key: string]: unknown
 }
 
-const pkg: Pkg = JSON.parse(
-    fs.readFileSync(path.join(rootDir, './package.json'), 'utf-8') || '{}'
-)
+const req = createRequire(import.meta.url)
+
+const pkg: Pkg = req('../../package.json')
 
 const getPkg = (prop: string) => {
     return prop ? pkg[prop] : pkg
