@@ -4,7 +4,7 @@
   "type": "module",
   "description": "",
   "scripts": {
-    "dev": "tsc-watch"
+    "dev": "tsc-watch --onSuccess \"node scripts/out.js\""
   },
   "bin": {
     "rec": "./dist/bin/rec.js"
