@@ -10,6 +10,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@beaglee/eslint-config-base": "workspace:^1.0.0"
+    "@beaglee/eslint-config-base": "workspace:^1.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "@vue/eslint-config-airbnb": "^5.0.2"
   }
 }

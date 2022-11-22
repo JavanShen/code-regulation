@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@beaglee/eslint-config-base": "workspace:^1.0.0"
+    "@beaglee/eslint-config-base": "workspace:^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint-import-resolver-typescript": "^3.5.1"
   },
   "peerDependencies": {
     "eslint": "^8.27.0"
