@@ -11,5 +11,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@beaglee/eslint-config-base": "workspace:^1.0.0",
+    "@beaglee/eslint-config-typescript": "workspace:^1.0.0",
+    "@beaglee/eslint-config-vue": "workspace:^1.0.0",
+    "@beaglee/prettier": "workspace:^1.0.0"
+  }
 }

@@ -1,8 +1,5 @@
 import { createRequire } from 'module'
-
-interface Pkg {
-    [key: string]: unknown
-}
+import type { Pkg } from '../../types/pkg'
 
 const req = createRequire(import.meta.url)
 
