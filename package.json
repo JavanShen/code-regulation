@@ -5,6 +5,7 @@
   "description": "",
   "scripts": {
     "dev:base": "pnpm run --filter @beaglee/base dev",
+    "build:base": "pnpm run --filter @beaglee/base build",
     "lint": "eslint . --ext .js,.ts --no-fix ",
     "lint-staged": "lint-staged",
     "preapre": "husky install"
