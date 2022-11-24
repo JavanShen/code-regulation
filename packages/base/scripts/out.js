@@ -1,5 +1,17 @@
-import fs from 'fs'
+import { promises } from 'fs'
 
-fs.createReadStream('./package.json', 'utf-8').pipe(
-    fs.createWriteStream('./dist/package.json', 'utf-8')
+const pkg = JSON.parse(await promises.readFile('../package.json', 'utf-8'))
+
+promises.writeFile(
+    '../dist/package.json',
+    JSON.stringify(
+        {
+            ...pkg,
+            bin: './bin/rec.js',
+            files: ['bin', 'lib'],
+            scripts: {}
+        },
+        null,
+        2
+    )
 )
