@@ -1,9 +1,9 @@
 import { promises } from 'fs'
 
-const pkg = JSON.parse(await promises.readFile('../package.json', 'utf-8'))
+const pkg = JSON.parse(await promises.readFile('./package.json', 'utf-8'))
 
 promises.writeFile(
-    '../dist/package.json',
+    './dist/package.json',
     JSON.stringify(
         {
             ...pkg,
