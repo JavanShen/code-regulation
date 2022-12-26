@@ -1,18 +1,21 @@
 {
-  "name": "@beaglee/eslint-config-base",
-  "version": "1.0.0",
-  "main": "index.js",
-  "description": "base rule for eslint",
-  "keywords": ["base", "eslint"],
-  "author": "apine",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.27.0"
-  }
+    "name": "@beaglee/eslint-config-base",
+    "version": "1.0.0-alpha.0",
+    "main": "index.js",
+    "description": "base rule for eslint",
+    "keywords": [
+        "base",
+        "eslint"
+    ],
+    "author": "apine",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "eslint-config-airbnb-base": "^15.0.0"
+    },
+    "peerDependencies": {
+        "eslint": "^8.27.0"
+    }
 }
