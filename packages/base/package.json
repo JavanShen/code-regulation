@@ -21,6 +21,11 @@
     ],
     "author": "apine",
     "license": "MIT",
+    "dependencies": {
+        "commander": "^9.4.1",
+        "execa": "^6.1.0",
+        "inquirer": "^9.1.4"
+    },
     "publishConfig": {
         "access": "public"
     }
