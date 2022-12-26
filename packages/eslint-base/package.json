@@ -2,9 +2,9 @@
   "name": "@beaglee/eslint-config-base",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "",
-  "keywords": [],
-  "author": "",
+  "description": "base rule for eslint",
+  "keywords": ["base", "eslint"],
+  "author": "apine",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
