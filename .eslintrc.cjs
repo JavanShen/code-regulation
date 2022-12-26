@@ -19,7 +19,7 @@ module.exports = {
         'import/no-extraneous-dependencies': [
             'error',
             {
-                packageDir: ['./']
+                packageDir: ['./', 'packages/base']
             }
         ],
         // 取消对for...of的限制
