@@ -4,8 +4,8 @@
     "type": "module",
     "description": "tool to build eslint+prettier",
     "scripts": {
-        "dev": "tsc-watch --onSuccess \"node scripts/out.js\"",
-        "build": "tsc && node scripts/out.js"
+        "dev": "tsc-watch",
+        "build": "tsc"
     },
     "bin": {
         "rec": "./dist/bin/rec.js"
@@ -13,15 +13,14 @@
     "files": [
         "dist"
     ],
-    "keywords": ["eslint", "prettier", "regulation", "tool"],
+    "keywords": [
+        "eslint",
+        "prettier",
+        "regulation",
+        "tool"
+    ],
     "author": "apine",
     "license": "MIT",
-    "dependencies": {
-        "@beaglee/eslint-config-base": "workspace:^1.0.0-alpha.0",
-        "@beaglee/eslint-config-typescript": "workspace:^1.0.0-alpha.0",
-        "@beaglee/eslint-config-vue": "workspace:^1.0.0-alpha.0",
-        "@beaglee/prettier": "workspace:^1.0.0-alpha.0"
-    },
     "publishConfig": {
         "access": "public"
     }
